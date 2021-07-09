@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.header {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.header__menu {
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu--links {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__menu--links__link {
+  font-size: 1.8rem;
+  color: #000;
+}
+.header__menu--links__link:not(:first-child) {
+  margin-left: 5rem;
+}
+.header__menu--links__link:nth-child(5) {
+  margin-right: 11rem;
+}
+.header__menu--links__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 4.7rem;
+  background: #ff6b6b;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.left-side {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 48rem;
+  height: 80rem;
+  border-radius: 0px 0px 29rem 29rem;
+  background-image: url(../img/header-h.png);
+  background-color: rgba(255, 105, 105, 0.51);
+  background-blend-mode: screen;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */

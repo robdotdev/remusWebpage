@@ -1,0 +1,57 @@
+.header {
+  max-width: 144rem;
+  margin: 0 auto;
+
+  &__menu {
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--logo {
+    }
+    &--links {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &__link {
+        font-size: 1.8rem;
+        color: #000;
+
+        &:not(:first-child) {
+          margin-left: 5rem;
+        }
+
+        &:nth-child(5) {
+          margin-right: 11rem;
+        }
+      }
+      &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        height: 4.7rem;
+        background: #ff6b6b;
+        border-radius: 2rem;
+        font-size: 1.8rem;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.left-side {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 48rem;
+  height: 80rem;
+  border-radius: 0px 0px 29rem 29rem;
+  background-image: url(../img/header-h.png);
+  background-color: rgba(255, 105, 105, 0.51);
+  background-blend-mode: screen;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
