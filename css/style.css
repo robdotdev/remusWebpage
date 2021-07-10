@@ -27,7 +27,13 @@ body {
   gap: 0px 0px;
   grid-template-areas: "leftSideUp rightSide rightSide" "leftSideDown rightSide rightSide";
 }
-.header__menu {
+@media only screen and (max-width: 90em) {
+  .header {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+
+.menu {
   width: 144rem;
   padding: 1.5rem 3rem;
   display: flex;
@@ -37,22 +43,22 @@ body {
   top: 0;
   left: auto;
 }
-.header__menu--links {
+.menu--links {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.header__menu--links__link {
+.menu--links__link {
   font-size: 1.8rem;
   color: #000;
 }
-.header__menu--links__link:not(:first-child) {
+.menu--links__link:not(:first-child) {
   margin-left: 5rem;
 }
-.header__menu--links__link:nth-child(5) {
+.menu--links__link:nth-child(5) {
   margin-right: 11rem;
 }
-.header__menu--links__btn {
+.menu--links__btn {
   display: flex;
   justify-content: center;
   align-items: center;
