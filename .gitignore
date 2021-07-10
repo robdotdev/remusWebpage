@@ -1,4 +1,5 @@
 node_modules/
 sass/
-!sass/style.css.map
+css/style.css.map
+package-lock.json
 
